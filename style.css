@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Pacifico;
+    height: 90vh;
+    font-size: 60px;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    font-family: Pacifico;
+    margin: 0 100px;
+    font-size: 40px;
+    --bg: #ffffff;
+    --hover-bg: #39e456b9;
+    --hover-text: #000000;
+    color: #000000;
+    cursor: pointer;
+    border: 1px solid var(--bg);
+    border-radius: 12px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+    box-shadow: 10px 5px 5px rgb(71, 70, 70);
+}
+
+button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
